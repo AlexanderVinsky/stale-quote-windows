@@ -4,7 +4,7 @@ Measure **stale-quote windows** between a fast reference price feed and a retail
 
 Companion code for the series *Measuring Latency Arbitrage*:
 - Part 1: [Recording Two Tick Feeds on One Clock](https://hft-latency-arbitrage.hashnode.dev/recording-two-tick-feeds-on-one-clock)
-- Full study: [How Long Do Stale Quotes Last?](https://westernpips.com/latency-arbitrage-data-study.html) · DOI [10.5281/zenodo.23364414](https://doi.org/10.5281/zenodo.23364414)
+- Full study: [How Long Do Stale Quotes Last?](https://westernpips.com/latency-arbitrage-data-study.html) · DOI [10.5281/zenodo.23364414](https://doi.org/10.5281/zenodo.23364414) · SocArXiv preprint [10.31235/osf.io/cg2yv_v1](https://doi.org/10.31235/osf.io/cg2yv_v1) · SSRN [10.2139/ssrn.7655440](https://doi.org/10.2139/ssrn.7655440)
 
 ## What it does
 
