@@ -5,6 +5,7 @@ Measure **stale-quote windows** between a fast reference price feed and a retail
 Companion code for the series *Measuring Latency Arbitrage*:
 - Part 1: [Recording Two Tick Feeds on One Clock](https://hft-latency-arbitrage.hashnode.dev/recording-two-tick-feeds-on-one-clock)
 - Full study: [How Long Do Stale Quotes Last?](https://westernpips.com/latency-arbitrage-data-study.html) · DOI [10.5281/zenodo.23364414](https://doi.org/10.5281/zenodo.23364414) · SocArXiv preprint [10.31235/osf.io/cg2yv_v1](https://doi.org/10.31235/osf.io/cg2yv_v1) · SSRN [10.2139/ssrn.7655440](https://doi.org/10.2139/ssrn.7655440)
+- Practical guide: [Latency Arbitrage: How It Works and How to Test It](https://westernpips.com/latency-arbitrage.html)
 
 ## What it does
 
@@ -32,18 +33,4 @@ Two CSV files, one tick per row, no header:
 t_ms,bid,ask
 ```
 
-`t_ms` is the arrival time at the recording machine in milliseconds. **Both feeds must be timestamped by the same clock**, otherwise you measure clock drift as much as the market. `--point` is the price of one point (0.01 for XAUUSD), `--threshold` is the gap in points that opens a window.
-
-## Limits
-
-- Displayed quotes only: no commission, slippage, swap, markup, rejections or last look. Anything measured this way is a gross upper bound.
-- At 1 ms resolution, ticks from both feeds can share a timestamp; treat windows of 1–2 ms as noise.
-- A window still open when the recording ends is left out.
-
-## Disclosure
-
-The author works at [Westernpips](https://westernpips.com/alexander-vinsky.html), which develops HFT and latency arbitrage software. This repository contains only the example code from the article, not Westernpips software.
-
-## License
-
-MIT
+`t_ms` is the arrival time at the recording machine in milliseconds. **Both feeds must be timestamped by the same clock**, otherwise you measure clock drift as much as the market. `--point` is the price of one point (0.01 for XAUUSD),
